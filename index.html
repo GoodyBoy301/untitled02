@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Untitled 02</title>
+
+    <meta name="description" content="The Untitled Series" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Untitled 01" />
+    <meta
+      property="twitter:description"
+      content="No descriptions yet, ride on"
+    />
+    <meta property="twitter:image" content="" />
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@1&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <section>
+        <p>Ride Finished</p>
+        <h2>How was your ride?</h2>
+        <div>
+          <p class="left">Horrible</p>
+          <p class="left">Ok</p>
+          <p class="center">Good</p>
+        </div>
+        <canvas id="rive" width="500" height="500"></canvas>
+        <form>
+          <input type="range" name="rating" id="rating" min="0" max="2" step="0.01" value="2">
+          <div class="line"></div>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <script src="rive.js"></script/>
+    <script src="app.js"></script/>
+  </body>
+</html>
